@@ -1,0 +1,159 @@
+body{
+    background-color: #242424;
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .mainContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .containerCard{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap ;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .card {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5DFD19;
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    position: relative; /* Esto permite que los elementos hijos con posición absoluta se posicionen respecto a la tarjeta */
+  }
+  
+  .card:hover{
+    transform: scale(1.1); 
+    transition: 1s;
+    cursor: pointer;
+  }
+  
+  .card img {
+    width: 180px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 2px solid black;
+  }
+  
+  .card h4 {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-weight: 500;
+  }
+  
+  .containerStatus {
+    background-color: #5DFD19;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    position: absolute; 
+    top: 185px; 
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+  
+  .containerStatus p {
+    font-weight: 500;
+  }
+  
+  .parrafo {
+    margin-top: 0;
+    font-size: 13px;
+  }
+  
+  .containerButton{
+    margin: 20px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .containerButton button{
+    padding: 10px;
+    height: 50px;
+    border: none;
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    background-color: #5DFD19;
+    border-radius: 10px;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .buttons{
+    width: 45px;
+  }
+  
+  .containerButton button:hover{
+    transform: scale(1.1); 
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  
+  .rick{
+    width: 35px;
+  }
+  .forms{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  form input{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+
+  form select{
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+
+  form button{
+    padding: 6px 6px 6px 6px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #5DFD19;
+    color: #242424;
+    font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-weight: 600;
+  }

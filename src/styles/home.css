@@ -14,10 +14,10 @@ body {
   gap: 20px;
   width: 600px;
   margin-left: 120px;
-  padding: 20px; 
+  padding: 20px;
 }
 
-.containerText{
+.containerText {
   height: 130px;
   margin-left: 10px;
 }
@@ -28,13 +28,13 @@ body {
   font-size: 25px;
 }
 
-.containerText h2{
+.containerText h2 {
   margin-top: 0;
   color: white;
   font-size: 25px;
 }
 
-.containerText button{
+.containerText button {
   width: 100px;
   height: 40px;
   cursor: pointer;
@@ -46,8 +46,6 @@ body {
   font-weight: 500;
 }
 
-
-
 .containerPepino img {
   width: 200px;
   margin-top: 20px; /* Ajusta el margen superior del texto */
@@ -58,7 +56,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 114vh; /* Altura ajustada según necesidad */
+  height: 100vh; /* Altura ajustada para ocupar toda la pantalla */
   position: relative;
   z-index: 0; /* Asegura que el fondo esté detrás */
   margin-left: 30px; /* Ajusta el margen izquierdo */
@@ -69,4 +67,38 @@ body {
   height: 100%;
   object-fit: cover;
   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 850px) {
+  .containerPepino {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 65vh;
+  }
+  .containerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .mainContainerFondo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .containerFondo {
+    margin: 0;
+    height: 53vh; /* Altura ajustada para pantallas pequeñas */
+    width: 100%;
+    margin-top: 80px;
+  }
+  .containerFondo img {
+    clip-path: none;
+  }
 }
